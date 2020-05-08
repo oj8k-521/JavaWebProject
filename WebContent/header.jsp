@@ -14,6 +14,19 @@
 <script src="js/comm.js"></script>
 <link rel="shortcut icon"
 	href="https://ojbk520.cn/content/templates/fee/static/img/favicon.ico">
+<style type="text/css">
+#top-img {
+	background: url(gif/top.gif);
+	height: 5px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	Z-index: 999;
+	top: 0px;
+	position: fixed;
+}
+</style>
+<div id="top-img"></div>
 </head>
 <body>
 	<header id="header">
@@ -27,17 +40,17 @@
 			<nav>
 				<ul id="starlist">
 					<li><a href="index.jsp">网站首页</a></li>
-					<li><a href="about.html">关于我们</a></li>
-					<li class="menu"><a href="list3.html">产品展示</a>
+					<li><a href="about.jsp">关于我们</a></li>
+					<li class="menu"><a href="list2.jsp">产品展示</a>
 						<ul class="sub">
-							<li><a href="/6">产品详情</a></li>
+							<li><a href="info.jsp">产品详情</a></li>
 						</ul> <span></span></li>
-					<li class="menu"><a href="list3.html">新闻资讯</a>
+					<li class="menu"><a href="list1.jsp">新闻资讯</a>
 						<ul class="sub">
-							<li><a href="/6">咨询详情</a></li>
+							<li><a href="list.jsp">咨询详情</a></li>
 						</ul> <span></span></li>
-					<li><a href="daohang.html">联系我们</a></li>
-					<li><a href="about.html">留言</a></li>
+					<li><a href="daohang.jsp">联系我们</a></li>
+					<li><a href="time.jsp">留言</a></li>
 				</ul>
 			</nav>
 			<div class="searchico"></div>
@@ -60,5 +73,6 @@
 		<div class="searchclose"></div>
 	</div>
 	<!--top end-->
+	<jsp:include page="Effects.jsp"></jsp:include>
 </body>
 </html>
